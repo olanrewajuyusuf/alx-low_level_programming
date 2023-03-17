@@ -4,6 +4,16 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * variable n stores random value
+ * if statement check if n is greater than 0
+ * or equal to 0 or less than 0 to print out
+ * either n is positive or negative
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
