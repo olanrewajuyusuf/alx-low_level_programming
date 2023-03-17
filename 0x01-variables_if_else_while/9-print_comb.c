@@ -7,17 +7,16 @@
  */
 int main(void)
 {
-	int i, j;
+	int i, j, k;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = i; j < 10; j++)
 		{
-			putchar(i + '0');
-			putchar(',');
-			putchar(' ');
-			putchar(j + '0');
-			if (j != 9)
+			k = i * 10 + j;
+			putchar(k / 10 + '0');
+			putchar(k % 10 + '0');
+			if (k != 89)
 			{
 				putchar(',');
 				putchar(' ');
