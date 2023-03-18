@@ -19,7 +19,6 @@ int main(void)
 			if (k != 89)
 			{
 				putchar(',');
-				putchar(' ');
 			}
 		}
 	}
