@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - prints its name of the program
@@ -9,7 +10,16 @@
 int main(int argc, char *argv[])
 {
 	(void)argc;
+	char *programName;
+	char *slash;
 
-	printf("%s\n", argv[0]);
+	programName = argv[0];
+	slash = strrchr(programName, '/');
+	if (slash != NULL)
+	{
+		programName = slash + 1;
+	}
+
+	printf("%s\n", programName);
 	return (0);
 }

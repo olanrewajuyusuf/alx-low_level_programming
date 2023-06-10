@@ -6,10 +6,8 @@
  * @argv: argument vector
  * Return: Success
  */
-int main(int argc, char* argv[])
+int main(int argc, __attribube__((unused))char *argv[])
 {
-        (void)argv;
-
-        printf("%d\n", argc - 1);
-        return (0);
+	printf("%d\n", argc - 1);
+	return (0);
 }
